@@ -1,0 +1,161 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>John Busuego - Portfolio</title> 
+    <style> 
+        * { 
+            box-sizing: border-box; 
+            margin: 0; 
+            padding: 0; 
+        } 
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; 
+            background-color: #0f1115; 
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            overflow: hidden; 
+        } 
+        .profile-card { 
+            background: rgba(255, 255, 255, 0.03); 
+            backdrop-filter: blur(16px); 
+            -webkit-backdrop-filter: blur(16px); 
+            padding: 50px 40px; 
+            border-radius: 24px; 
+            text-align: center; 
+            color: #ffffff; 
+            max-width: 440px; 
+            width: 90%; 
+            border-top: 1px solid rgba(255, 255, 255, 0.15); 
+            border-left: 1px solid rgba(255, 255, 255, 0.1); 
+            border-right: 1px solid rgba(255, 255, 255, 0.05); 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.02); 
+            box-shadow: 0 30px 60px rgba(0,0,0,0.6); 
+            position: relative; 
+        } 
+        .accent-wrapper { 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            gap: 15px; 
+            margin-bottom: 12px; 
+        } 
+        .accent-line { 
+            flex-grow: 1; 
+            height: 1px; 
+            background: linear-gradient(90deg, rgba(255,255,255,0), rgba(255,255,255,0.25), rgba(255,255,255,0)); 
+        } 
+        h1 { 
+            font-size: 32px; 
+            font-weight: 800; 
+            letter-spacing: -0.5px; 
+            white-space: nowrap; 
+        } 
+        .tagline { 
+            font-size: 11px; 
+            color: #a0a5b0; 
+            margin-bottom: 35px; 
+            font-weight: 500; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            line-height: 1.5; 
+        } 
+        .social-row { 
+            display: flex; 
+            justify-content: center; 
+            gap: 15px; 
+            margin-bottom: 30px; 
+        } 
+        .icon-btn { 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            padding: 10px 24px; 
+            border: 1px solid rgba(255, 255, 255, 0.15); 
+            border-radius: 50px; 
+            color: #ffffff; 
+            text-decoration: none; 
+            font-size: 13px; 
+            font-weight: 600; 
+            letter-spacing: 0.5px; 
+            background: rgba(255, 255, 255, 0.02); 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+        } 
+        .icon-btn:hover { 
+            background: #ffffff; 
+            color: #0f1115; 
+            border-color: #ffffff; 
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 20px rgba(255,255,255,0.1); 
+        } 
+        .doc-buttons { 
+            display: flex; 
+            flex-direction: column; 
+            gap: 14px; 
+            align-items: center; 
+            width: 100%; 
+        } 
+        .pill-btn { 
+            display: block; 
+            width: 100%; 
+            max-width: 280px; 
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.03)); 
+            color: #ffffff; 
+            text-decoration: none; 
+            padding: 14px 0; 
+            border: 1px solid rgba(255, 255, 255, 0.25); 
+            border-radius: 50px; 
+            font-size: 14px; 
+            font-weight: 600; 
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); 
+            letter-spacing: 0.5px; 
+        } 
+        .pill-btn:hover { 
+            background: #ffffff; 
+            color: #0f1115; 
+            border-color: #ffffff; 
+            transform: translateY(-3px); 
+            box-shadow: 0 10px 25px rgba(255,255,255,0.15); 
+        } 
+        footer { 
+            position: absolute; 
+            bottom: 20px; 
+            width: 100%; 
+            text-align: center; 
+            color: rgba(255, 255, 255, 0.3); 
+            font-size: 11px; 
+            letter-spacing: 0.5px; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <div class="profile-card"> 
+        
+        <div class="accent-wrapper"> 
+            <div class="accent-line"></div> 
+            <h1>John Busuego</h1> 
+            <div class="accent-line"></div> 
+        </div> 
+
+        <div class="tagline">Strategic Leader | Risk Manager | PMP</div> 
+        
+        <div class="social-row"> 
+            <!-- Your live LinkedIn link -->
+            <a href="https://linkedin.com" target="_blank" class="icon-btn" aria-label="LinkedIn">LinkedIn</a> 
+            <!-- Your live GitHub Link -->
+            <a href="https://github.com/jbusey12/jbusey12.github.io" target="_blank" class="icon-btn" aria-label="GitHub">GitHub</a> 
+        </div> 
+        
+        <div class="doc-buttons"> 
+            <!-- Your live Google Drive Resume Link -->
+            <a href="https://google.com" target="_blank" class="pill-btn">View Resume</a> 
+        </div> 
+    </div> 
+    <footer> 
+        &copy; 2026 John Busuego 
+    </footer> 
+</body> 
+</html>
